@@ -1,0 +1,21 @@
+div{
+    height: 275px;
+    width: 220px;
+    border: 1px maroon solid;
+    background-color: antiquewhite;
+    padding: 5px;
+    float: left;
+    margin: 10px;
+}
+p{
+    text-align: center;
+}
+#sectionMain{
+    border: 1px beige solid;
+    height: 400px;
+    width: 1000px;
+}
+
+#divCart{
+    float: right;
+}

@@ -1,0 +1,19 @@
+
+<!-- Structural directive for iteration -->
+<div *ngFor="let Doctor of Doctors">
+    <!-- <img [src]="Doctor.pic" height="200" width="200"> -->
+    <h1>
+        <hr>
+        {{Doctor.name}}
+        <br>
+        {{Doctor.Speciality}}
+        <br>
+        {{Doctor.Experience}}
+        <br>
+        {{Doctor.like}} <i class="fa fa-thumbs-up" aria-hidden="true" (click)="like(Doctor.Id)"></i>
+        <br>
+        <!-- pipe for currenct symbol display -->
+        <button class="btn btn-primary" (click)="buy(Doctor.Id)" >Add to Favourite</button>
+    </h1>
+  </div>
+  

@@ -1,0 +1,12 @@
+<div>
+    <label class="form-control">Name</label>
+    <input type="text" [(ngModel)]="pro.userName" class="form-control" >
+    <label class="form-control">Price</label>
+    <input type="text" class="form-control" [(ngModel)]="this.pro.price">
+    <label class="form-control">Description</label>
+    <input type="text" class="form-control" [(ngModel)]="pro.description">
+    <label class="form-control">Pic</label>
+    <input type="text" class="form-control" [(ngModel)]="pro.pic">
+    <button (click)="addproduct()" class="btn btn-success">Add</button>
+    <button (click)="reset()" class="btn btn-danger">Cancel</button>
+</div>

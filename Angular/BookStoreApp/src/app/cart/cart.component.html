@@ -1,0 +1,28 @@
+<section id="sectionMain">
+    <div *ngFor="let c of cart">
+        <div class="card">
+            <div class="card-header">
+               <h2>BookName {{c.book.name}}</h2>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">BookAuthor {{c.book.authorname}}</h5>
+              <p class="card-text">{{c.book.price | currency }}<br>
+                 {{c.quantity}} Units Added<br>
+                 {{c.book.Quantity}} Unitavl<br>
+                 {{c.book.likes}}<i class="fa fa-thumbs-up" 
+                aria-hidden="true" ></i></p>
+                <span *ngIf="c.book.Quantity ==0 ">
+                    <ng-template #ifBlock>
+                        <a class="btn btn-primary" (click)="goToBook()" >Buy Books</a>  
+                        <a class="btn btn-primary" (click)="goToBook()" >View Books</a>
+                    </ng-template>
+                    <ng-template #elseBlock>
+                        <a class="btn btn-primary" (click)="goToBook()" >Buy Books</a>  
+                        <a class="btn btn-primary" (click)="goToBook()" >View Books</a>                  
+                    </ng-template>
+                </span> 
+            </div>
+          </div>
+    </div>
+    
+  </section>

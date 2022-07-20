@@ -1,0 +1,22 @@
+<section id="sectionMain">
+    <div *ngFor="let book of books">
+        <div class="card">
+            <div class="card-header">
+               <h2>BookName {{book.name}}</h2>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">BookAuthor {{book.authorname}}</h5>
+              <p class="card-text">{{book.price | currency }}<br>
+                 {{book.likes}}<i class="fa fa-thumbs-up" 
+                aria-hidden="true" (click)="like(book.id)"></i></p>
+
+                <button class="btn btn-primary" (click)="buy(book.id)" >Add Cart</button>
+                <button class="btn btn-primary" (click)="goToCart()" >View Cart</button>
+            </div>
+          </div>
+    </div>
+    <section id="divCart">
+        {{count}}
+        <i class="fa fa-folder" aria-hidden="true" (click)="goToCart()"></i>
+      </section>
+  </section>

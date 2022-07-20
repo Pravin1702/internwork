@@ -1,0 +1,16 @@
+<button class="btn btn-primary" (click)="sowProducts()">
+    Get product
+</button>
+<button class="btn btn-primary" (click)="AddProduct()">
+    Add Product
+</button>
+<div *ngFor="let p of products">
+    Name : {{p.name}}
+    <br>
+    Id : {{p.id}} 
+    <br>
+    Price : {{p.price}}
+    <br>
+    Description : {{p.description}} 
+    <br>
+</div>

@@ -1,0 +1,10 @@
+<button class="btn btn-primary" (click)="sowWeather()">
+    Get Weather
+</button>
+<div *ngFor="let weather of weathers">
+    Data: {{weather.date}}
+    <br>
+    Temperature in Degree : {{weather.temperatureC}}
+    <br>
+    summary : {{weather.summary}}
+</div>
